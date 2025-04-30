@@ -15,9 +15,11 @@ let package = Package(
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "SDWebImage",
+            type: .static,
             targets: ["SDWebImage"]),
         .library(
             name: "SDWebImageMapKit",
+            type: .static,
             targets: ["SDWebImageMapKit"])
     ],
     dependencies: [
@@ -31,7 +33,6 @@ let package = Package(
             name: "SDWebImage",
             dependencies: [],
             path: "SDWebImage",
-            type: .static,
             sources: ["Core", "Private"],
             resources: [.copy("Resources/PrivacyInfo.xcprivacy")],
             cSettings: [
