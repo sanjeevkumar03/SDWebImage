@@ -31,6 +31,7 @@ let package = Package(
             name: "SDWebImage",
             dependencies: [],
             path: "SDWebImage",
+            type: .static,
             sources: ["Core", "Private"],
             resources: [.copy("Resources/PrivacyInfo.xcprivacy")],
             cSettings: [
